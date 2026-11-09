@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marbel Oniel Rodríguez Trinidad | Portafolio</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header class="encabezado" id="inicio">
+    <h1>Marbel Oniel Rodríguez Trinidad</h1>
+    <p>Estudiante de Ingeniería en Sistemas Computacionales &middot; UCATEBA</p>
+    <p class="fecha">Fecha: 05/11/2026</p>
+  </header>
+
+  <nav class="menu" aria-label="Menú principal">
+    <button id="btnMenu" class="hamburguesa" aria-label="Abrir menú" aria-expanded="false">&#9776; Menú</button>
+    <ul id="listaMenu">
+      <li><a href="#portada">Inicio</a></li>
+      <li><a href="#biografia">Biografía</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button id="btnTema" class="tema" aria-label="Cambiar tema claro u oscuro">&#127769; Oscuro</button>
+  </nav>
+
+  <main>
+
+    <section id="portada" class="seccion foto panel">
+      <img src="foto.jpg" alt="Foto de medio cuerpo de Marbel Oniel Rodríguez Trinidad">
+      <h2 class="sin-linea">Marbel Oniel Rodríguez</h2>
+      <p>Barahona, República Dominicana</p>
+    </section>
+
+    <section id="biografia" class="seccion panel">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy estudiante de Ingeniería en Sistemas Computacionales en la Universidad
+        Católica Tecnológica de Barahona (UCATEBA). Además de mis estudios
+        universitarios, me he formado en refrigeración, primeros auxilios, natación
+        y rescate.
+      </p>
+      <p id="masInfo" class="oculto">
+        Busco integrarme a un equipo dinámico y competitivo donde pueda aportar mi
+        compromiso y mi disposición de aprendizaje, mientras adquiero nuevas
+        experiencias y conocimientos en el área de sistemas e informática. Me
+        considero una persona responsable, con espíritu de servicio y con ganas
+        de crecer profesional y personalmente.
+      </p>
+      <button id="btnMas" class="boton">Leer más</button>
+
+      <h3>Datos personales</h3>
+      <dl class="datos-personales">
+        <dt>Nombre completo</dt><dd>Marbel Oniel Rodríguez Trinidad</dd>
+        <dt>Residencia</dt><dd>Cristo Rey, Jaquimeyes, Barahona, R.D.</dd>
+        <dt>Teléfono</dt><dd>809-453-1128</dd>
+        <dt>Estudios actuales</dt><dd>Ingeniería en Sistemas Computacionales (UCATEBA)</dd>
+        <dt>Bachillerato</dt><dd>Liceo Cruce de Palo Alto (2019)</dd>
+        <dt>Cursos</dt><dd>Refrigeración, Primeros Auxilios, Natación y Rescate</dd>
+        <dt>Idiomas</dt><dd>Español (nativo) e Inglés (intermedio)</dd>
+      </dl>
+    </section>
+
+    <section id="formacion" class="seccion panel">
+      <h2>Formación académica</h2>
+      <ol class="linea-tiempo">
+        <li><strong>2019</strong> Bachiller &mdash; Liceo Cruce de Palo Alto</li>
+        <li><strong>Curso</strong> Refrigeración &mdash; Escuela Vocacional INFOTEP</li>
+        <li><strong>Curso</strong> Primeros Auxilios &mdash; Defensa Civil</li>
+        <li><strong>Curso</strong> Natación y Rescate &mdash; Defensa Civil</li>
+        <li><strong>Actualidad</strong> Ingeniería en Sistemas Computacionales &mdash; UCATEBA</li>
+      </ol>
+    </section>
+
+    <section id="habilidades" class="seccion panel">
+      <h2>Tabla de habilidades</h2>
+
+      <div class="filtros" role="group" aria-label="Filtrar habilidades">
+        <button class="boton filtro activo" data-filtro="todas">Todas</button>
+        <button class="boton filtro" data-filtro="tecnica">Técnicas</button>
+        <button class="boton filtro" data-filtro="personal">Personales</button>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table id="tablaHabilidades">
+          <thead>
+            <tr><th>Habilidad</th><th>Tipo</th><th>Nivel</th></tr>
+          </thead>
+          <tbody>
+            <tr data-tipo="tecnica"><td>Microsoft Office (Word, Excel, PowerPoint)</td><td>Técnica</td><td><div class="barra" data-nivel="80"><span></span></div>80%</td></tr>
+            <tr data-tipo="tecnica"><td>Fundamentos de programación (lógica y algoritmos)</td><td>Técnica</td><td><div class="barra" data-nivel="60"><span></span></div>60%</td></tr>
+            <tr data-tipo="tecnica"><td>Mantenimiento básico de computadoras</td><td>Técnica</td><td><div class="barra" data-nivel="70"><span></span></div>70%</td></tr>
+            <tr data-tipo="tecnica"><td>Redes e instalación de sistemas operativos</td><td>Técnica</td><td><div class="barra" data-nivel="65"><span></span></div>65%</td></tr>
+            <tr data-tipo="tecnica"><td>Internet y herramientas digitales</td><td>Técnica</td><td><div class="barra" data-nivel="85"><span></span></div>85%</td></tr>
+            <tr data-tipo="personal"><td>Trabajo en equipo</td><td>Personal</td><td><div class="barra" data-nivel="90"><span></span></div>90%</td></tr>
+            <tr data-tipo="personal"><td>Resolución de problemas</td><td>Personal</td><td><div class="barra" data-nivel="80"><span></span></div>80%</td></tr>
+            <tr data-tipo="personal"><td>Primeros auxilios y rescate</td><td>Personal</td><td><div class="barra" data-nivel="75"><span></span></div>75%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion panel">
+      <h2>Contacto</h2>
+      <ul class="datos">
+        <li><strong>Teléfono:</strong> <span id="telefono">809-453-1128</span></li>
+        <li><strong>Dirección:</strong> Cristo Rey, Jaquimeyes, Barahona, R.D.</li>
+        <li><strong>Correo:</strong> tucorreo@ejemplo.com</li>
+      </ul>
+
+      <div class="acciones">
+        <a class="boton" href="tel:+18094531128">&#128222; Llamar</a>
+        <a class="boton verde" href="https://wa.me/18094531128" target="_blank" rel="noopener">&#128172; WhatsApp</a>
+        <button id="btnCopiar" class="boton">&#128203; Copiar teléfono</button>
+        <button id="btnImprimir" class="boton">&#128424;&#65039; Imprimir / Guardar PDF</button>
+      </div>
+      <p id="avisoCopiar" class="aviso" role="status"></p>
+
+      <h3>Envíame un mensaje</h3>
+      <form id="formContacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit" class="boton verde">Enviar por WhatsApp</button>
+        <p id="respuesta" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; <span id="anio">2026</span> Marbel Oniel Rodríguez Trinidad. Todos los derechos reservados.</p>
+  </footer>
+
+  <button id="btnArriba" class="arriba" aria-label="Volver arriba">&#8593;</button>
+
+  <script src="archivo.js"></script>
+</body>
+</html>
